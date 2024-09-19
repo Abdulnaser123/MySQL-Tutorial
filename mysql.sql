@@ -1,0 +1,10 @@
+-- MySql toturial
+-- some of the most important SQL commands
+-- SELECT
+-- DELETE
+-- INSERT INTO
+-- CREATE DATABASE
+-- CREATE TABEL
+-- ALTER TABLE
+-- CREATE INDEX
+-- DEOP INDEX
