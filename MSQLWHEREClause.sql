@@ -23,7 +23,6 @@ WHERE salary  > 5000 AND
     last_name NOT LIKE 'S%';
 
 -- Example: Select all records from the "employees" table where the "salary" is greater than $50,000 and the "department_id" is 10,
-
 -- but exclude any employees whose last name starts with the letter "S", and also exclude any employees whose hire date is before January 1, 2010
 
 SELECT employee_id, first_name, last_name, salary,
@@ -32,9 +31,7 @@ FROM employees
 WHERE salary > 50000 AND department_id = 10 AND last_name NOT LIKE 'S%' AND hire_date >= 'january 1, 2010'
 
 -- Example: Select all records from the "employees" table where the "salary" is greater than $50,000 and the "department_id" is 10,
-
 -- but exclude any employees whose last name starts with the letter "S", and also exclude any employees whose hire date is before January 1, 2010,
-
 -- and also exclude any employees whose job title is "Manager"
 
 SELECT employee_id, first_name, last_name, salary,
@@ -68,17 +65,11 @@ FROM employees
 WHERE salary > 50000 AND department_id = 10 AND hire_date >= 'january 1, 2010' AND job_title != 'Manager' AND age >= 30
 
 -- Example: Select all records from the "employees" table where the "salary"
-
 -- is greater than $50,000 and the "department_id" is 10,
-
 -- but exclude any employees whose last name starts with the letter "S",
-
 -- and also exclude any employees whose hire date is before January 1, 2010,
-
 -- and also exclude any employees whose job title is "Manager",
-
 -- and also exclude any employees whose age is less than 30,
-
 -- and also exclude any employees whose salary is less than $40,000
 SELECT *
 FROM employees
